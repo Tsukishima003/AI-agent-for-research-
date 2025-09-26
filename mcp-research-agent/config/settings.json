@@ -1,0 +1,16 @@
+{
+  "providers": {
+    "google": { "api_key": "", "cse_id": "" },
+    "bing": { "api_key": "" },
+    "duckduckgo": { "enabled": true },
+    "arxiv": { "enabled": true },
+    "pubmed": { "enabled": true }
+  },
+  "rate_limits": {
+    "web": 1.0,
+    "academic": 1.0,
+    "content": 2.0
+  }
+}
+
+

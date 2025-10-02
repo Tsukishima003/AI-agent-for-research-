@@ -45,10 +45,9 @@ TypeScript MCP server providing research tools for AI assistants (Claude, etc.).
 
 Server listens on `ws://localhost:7800` by default. Override with `MCP_PORT`.
 
-## Features (planned)
-- Web search & fetch with rate limiting
+## Features 
 - Academic sources (arXiv, PubMed, Scholar)
-- Citation formatting (APA/MLA/Chicago)
-- Summarization, clustering, verification, bias heuristics
-- Notes, tagging, provenance, export (Markdown/HTML)
+
+<img width="1190" height="848" alt="using acedmic" src="https://github.com/user-attachments/assets/82af323e-0ea3-4591-aae8-a8bea083d438" />
+
 Y

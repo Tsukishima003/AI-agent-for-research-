@@ -14,7 +14,7 @@ export class RateLimiter {
   }
 
   async schedule<T>(task: () => Promise<T>): Promise<T> {
-    return this.queue.add(task);
+    return this.queue.add(async () => await task()) as Promise<T>;
   }
 }
 

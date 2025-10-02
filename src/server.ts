@@ -7,7 +7,14 @@ export function startServer(): void {
   const port = Number(process.env.PORT ?? process.env.MCP_PORT ?? 7800);
   const wss = new WebSocketServer({ port });
 
-  const server = new Server({ name: "mcp-research-agent", version: "0.1.0" });
+  const server = new Server(
+  { name: "mcp-research-agent", version: "0.1.0" },
+  {
+    capabilities: {
+      tools: {},
+    },
+  }
+);
   registerTools(server);
 
   const anyServer = server as any;
